@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import data from "./product.json";
+import Cart from "./components/Cart";
+import AddToCart from "./components/AddToCart";
 function App() {
+  // console.log(jsonData);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title-shop">SHOP</h1>
+      <main className="main bd-grid">
+        {data.products.map((product) => {
+          return (
+            <Cart
+              key={product.id}
+              name={product.name}
+              img={product.img}
+              priceBefore={product.priceBefore}
+              priceNow={product.priceNow}
+            />   
+          );
+        })}
+      </main>
+      <AddToCart/>
     </div>
   );
 }

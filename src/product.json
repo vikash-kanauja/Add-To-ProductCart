@@ -1,0 +1,33 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "AIR ZOOM PEGASUS",
+        "img": "img1.png",
+        "priceBefore": 190.0,
+        "priceNow": 349.0
+      },
+      {
+        "id": 2,
+        "name": "AIR ZOOM PEGASUS",
+        "img": "img2.png",
+        "priceBefore": 970.0,
+        "priceNow": 949.0
+      },
+      {
+        "id": 3,
+        "name": "AIR ZOOM PEGASUS",
+        "img": "img3.png",
+        "priceBefore": 990.0,
+        "priceNow": 719.0
+      },
+      {
+        "id": 4,
+        "name": "AIR ZOOM PEGASUS",
+        "img": "img4.png",
+        "priceBefore": 1990.0,
+        "priceNow": 739.0
+      }
+    ]
+  }
+  
